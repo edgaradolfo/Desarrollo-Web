@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elegir Archivo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://pagecdn.io/lib/ace/1.4.5/ace.js" integrity="sha256-5Xkhn3k/1rbXB+Q/DX/2RuAtaB4dRRyQvMs83prFjpM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" style="margin-left: 70px;"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-8" style="margin-left: 70px; margin-top: 20px;">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-2 card" id="video" style="margin-right: 10px;">
+                        <div class="imagen-archivos">
+                            <img src="img/subirvideo3.png" class="rounded mx-auto d-block">
+                        </div>
+                        <hr>
+                        <div class="card-body text-center">
+                            Videos
+                        </div>
+                        <div class="row"> 
+                            <div class="col-6">
+                                <a href="verVideos.html"><i class="fas fa-eye" style="color: rgb(236, 64, 12); font-size: 21px; cursor: pointer;"></i></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a onclick="mostrarformularioVideo();"><i class="fas fa-plus" style="color: rgb(236, 64, 12); font-size: 21px; cursor: pointer;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 card" id="imagen" style="margin-right: 10px;">
+                        <div class="imagen-archivos">
+                            <img src="img/subirimagen3.png" class="rounded mx-auto d-block">
+                        </div>
+                        <hr>
+                        <div class="card-body text-center">
+                            Imagenes
+                        </div>
+                        <div class="row"> 
+                            <div class="col-6">
+                                <a href="verImagenes.html"><i class="fas fa-eye" style="color: rgb(236, 64, 12); font-size: 21px; cursor: pointer;"></i></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a onclick="mostrarformularioImagenes();"><i class="fas fa-plus" style="color: rgb(236, 64, 12); font-size: 21px; cursor: pointer;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 card" id="archivo-generico" style="margin-right: 10px;">
+                        <div class="imagen-archivos">
+                            <img src="img/subirarchivosgenericos3.png" class="rounded mx-auto d-block">
+                        </div>
+                        <hr>
+                        <div class="card-body text-center">
+                            Archivos Genericos
+                        </div>
+                        <div class="row"> 
+                            <div class="col-6">
+                                <a href="verArchivos.html"><i class="fas fa-eye" style="color: rgb(236, 64, 12); font-size: 21px; cursor: pointer;"></i></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a onclick="mostrarformularioOtros();"><i class="fas fa-plus" style="color: rgb(236, 64, 12); font-size: 21px; cursor: pointer;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3" id="formularioArchivo" style="margin-left: 5px; margin-top: 20px;">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/funcionalidad.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

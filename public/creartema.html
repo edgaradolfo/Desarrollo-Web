@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crear Tema</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://pagecdn.io/lib/ace/1.4.5/ace.js" integrity="sha256-5Xkhn3k/1rbXB+Q/DX/2RuAtaB4dRRyQvMs83prFjpM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" style="margin-left: 70px;"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div>
+        <h2 class="text-center">Crear Tema</h2>
+    </div>
+
+    <div class="container card" style="margin-bottom: 17px;">
+            <div class="row">
+                <div class="col-12">
+                    <h5 style="margin-bottom: 10px; margin-top: 10px;">Informacion General:</h5>
+                    <input type="text" class="form-control" placeholder="Titulo del Tema" style="margin-bottom: 10px; margin-top: 10px;">
+                    <textarea name="" class="form-control" id="" cols="30" rows="5" style="margin-bottom: 10px; margin-top: 10px;" placeholder="Descripcion"></textarea>
+                    <h5 style="margin-bottom: 10px; margin-top: 10px;">Imagenes Asociadas:</h5>
+                    <input type="file" accept="image/*,.jpg, .png, .jpeg" multiple  style="margin-bottom: 10px; margin-top: 10px;" name="" id="" placeholder="Subir Archivo">
+                    <h5 style="margin-bottom: 10px; margin-top: 10px;">Editor CSS:</h5>
+                    <div id="editorCSS"></div>
+                    <h5 style="margin-bottom: 10px; margin-top: 10px;">Editor JavaScript:</h5>
+                    <div id="editorJS">function foo(items) {
+    var x = "Esto es un ejemplo";
+    return x;
+}
+                    </div>
+                    <button type="button" id="botonArchivos" style="margin-bottom: 10px;">Crear Tema</button>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+    
+    <script src="js/editor-css.js"></script>
+    <script src="js/editor-javascript.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+</body>
+</html>
