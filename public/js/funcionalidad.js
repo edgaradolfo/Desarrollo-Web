@@ -5,7 +5,7 @@ function mostrarformularioVideo(){
     <div class="row card" style="border-radius: 15px;">
         <div class="col-12">
             <div class="imagen-archivos"> 
-                <img src="img/subirvideo3.png" class="rounded mx-auto d-block" alt="">
+                <img src="img/subirvideo3.png" style="margin-left: 90px;" alt="">
             </div>
         </div>
         <hr>
@@ -45,7 +45,7 @@ function mostrarformularioImagenes(){
     <div class="row card" style="border-radius: 15px;">
         <div class="col-12">
             <div class="imagen-archivos"> 
-                <img src="img/subirimagen3.png" class="rounded mx-auto d-block" alt="">
+                <img src="img/subirimagen3.png" style="margin-left: 90px;" alt="">
             </div>
         </div>
         <hr>
@@ -85,7 +85,7 @@ function mostrarformularioOtros(){
     <div class="row card" style="border-radius: 15px;">
         <div class="col-12">
             <div class="imagen-archivos"> 
-                <img src="img/subirarchivosgenericos3.png" class="rounded mx-auto d-block" alt="">
+                <img src="img/subirarchivosgenericos3.png" style="margin-left: 90px;" alt="">
             </div>
         </div>
         <hr>
