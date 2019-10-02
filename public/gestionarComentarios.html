@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestionar Comentarios</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff !important;">
+        <a class="navbar-brand" href="#" style="margin-left: 70px;"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <p class="text-center" style="font-size: 35px;">Gestion de Comentarios</p>
+    </div>
+
+    <div class="container" style="margin-bottom: 10px;">
+        <div class="row">
+            <div class="col-4">
+                <input type="text" class="form-control" placeholder="Search...">
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card container">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive-md">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Usuario</th>
+                                <th>Comentario</th>
+                                <th>Post</th>
+                                <th>Fecha Comentario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alejandro Gutierrez</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sapiente. Quam nostrum laboriosam accusamus eligendi? Dolores pariatur ut impedit et esse suscipit quisquam eum autem magni corrupti. Eos, perspiciatis dolore.</td>
+                                <td>Post del comentario #1</td>
+                                <td>10/09/2019</td>
+                            </tr>
+                            <tr>
+                                <td>Alejandro Gutierrez</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptate nobis nostrum officiis velit harum, modi nisi quaerat, quam beatae! Sapiente accusamus neque eius aperiam animi dignissimos cum asperiores.</td>
+                                <td>Post del comentario #2</td>
+                                <td>10/09/2019</td>
+                            </tr>
+                            <tr>
+                                <td>Alejandro Gutierrez</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloremque totam, dolorem ducimus in neque saepe minus, quia dicta voluptates velit et sapiente porro vel expedita libero dolor, dignissimos blanditiis?</td>
+                                <td>Post del comentario #3</td>
+                                <td>10/09/2019</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <p class="text-center" style="font-size: 25px; margin-top: 5px;">Agregar Usuario</p>
+                </div>
+                <div class="col-12">
+                    <hr style="background-color: orange;">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">Nombre Usuario</label>
+                            <input type="text" class="form-control" placeholder="Ingrese Nombre del Usuario...">
+                        </div>
+                        <div class="col-6" style="margin-top: 10px;">
+                            <label for="">Correo Usuario</label>
+                            <input type="text" class="form-control" placeholder="Ingrese Nombre del Usuario...">
+                        </div>
+                        <div class="col-6" style="margin-top: 10px;">
+                            <label for="">Tipo de Usuario</label>
+                            <select name="" id="" class="form-control">
+                                <option value="" selected disabled> Seleccione un Nivel de Usuario</option>
+                                <option value="1">Administrador</option>
+                                <option value="2">Registrado</option>
+                                <option value="3">No Registrado</option>
+                            </select>
+                        </div>
+                        <div class="col-6" style="margin-top: 10px;">
+                            <label for="">Contraseña</label>
+                            <input type="password" class="form-control" placeholder="Ingrese contraseña...">
+                        </div>
+                        <div class="col-6" style="margin-top: 10px;">
+                            <label for="">Fecha de Creacion</label>
+                            <input type="date" class="form-control" placeholder="Ingrese Fecha...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="botonArchivos" class="btn" data-dismiss="modal">Close</button>
+                <button type="button" id="botonArchivos" class="btn">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
