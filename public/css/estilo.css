@@ -67,3 +67,8 @@ tbody tr:hover{
     background-color: rgba(228, 64, 42, 0.63) !important;
     color: white;
 }
+
+.ck-editor__editable_inline{
+
+    min-height: 190px;
+}
