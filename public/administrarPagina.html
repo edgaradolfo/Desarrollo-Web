@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/froala_editor.pkgd.min.css">
     <link rel="stylesheet" href="css/froala_style.min.css">
-    <script src="js/froala_editor.pkgd.min.js"></script>
+    <!-- <script src="js/froala_editor.pkgd.min.js"></script> -->
     <script src="https://pagecdn.io/lib/ace/1.4.5/ace.js" integrity="sha256-5Xkhn3k/1rbXB+Q/DX/2RuAtaB4dRRyQvMs83prFjpM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
 </head>
 <body>
 
@@ -34,17 +35,19 @@
         <div class="row">
             <div class="col-12">
                 <h5 style="margin-bottom: 10px; margin-top: 10px;">Editar Pagina:</h5>
-                <div id="froala-editor" style="margin-bottom: 17px;">
-
+                <div class="container">
+                    <textarea name="content" id="editorck">This is some sample content.</textarea>
                 </div>
                 <h5 style="margin-bottom: 10px; margin-top: 10px;">Encabezado de Pagina:</h5>
-                <div id="froala-editor" style="margin-bottom: 17px;">
-
+                <div class="container">
+                    <textarea name="content" id="editorck1">This is some sample content.</textarea>
                 </div>
+                
                 <h5 style="margin-bottom: 10px; margin-top: 10px;">Pie de Pagina:</h5>
-                <div id="froala-editor" style="margin-bottom: 17px;">
-
+                <div class="container">
+                    <textarea name="content" id="editorck2">This is some sample content.</textarea>
                 </div>
+                
                 <button type="button" id="botonArchivos" style="margin-bottom: 10px;" onclick="mostrarOtrasOpciones();">Otras opciones</button>
                 <button type="button" id="botonArchivos" style="margin-bottom: 10px;">Guardar Configuracion</button>
             </div>
@@ -82,7 +85,8 @@
     <script src="js/all.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@3.0.5/js/froala_editor.pkgd.min.js'></script>
+    <!-- <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@3.0.5/js/froala_editor.pkgd.min.js'></script> -->
+    
 
 
 </body>
