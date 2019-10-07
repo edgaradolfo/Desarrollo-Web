@@ -54,28 +54,12 @@
                                 <th>Nombre Usuario</th>
                                 <th>Tipo de Usuario</th>
                                 <th>Correo Usuario</th>
-                                <th>Fecha de Creacion</th>
+                                <th>Observacion</th>
+                                <th>Eliminar</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Alejandro Gutierrez</td>
-                                <td>Usuario Registrado</td>
-                                <td>alejandro@hotmail.com</td>
-                                <td>10/09/2019</td>
-                            </tr>
-                            <tr>
-                                <td>Alejandro Gutierrez</td>
-                                <td>Usuario Registrado</td>
-                                <td>alejandro@hotmail.com</td>
-                                <td>10/09/2019</td>
-                            </tr>
-                            <tr>
-                                <td>Alejandro Gutierrez</td>
-                                <td>Usuario Registrado</td>
-                                <td>alejandro@hotmail.com</td>
-                                <td>10/09/2019</td>
-                            </tr>
+                        <tbody id="tabla-usuarios">
+                            
                         </tbody>
                     </table>
                 </div>
@@ -98,15 +82,15 @@
                     <div class="row">
                         <div class="col-12">
                             <label for="">Nombre Usuario</label>
-                            <input type="text" class="form-control" placeholder="Ingrese Nombre del Usuario...">
+                            <input type="text" id="nombre" class="form-control" placeholder="Ingrese Nombre del Usuario...">
                         </div>
                         <div class="col-6" style="margin-top: 10px;">
                             <label for="">Correo Usuario</label>
-                            <input type="text" class="form-control" placeholder="Ingrese Nombre del Usuario...">
+                            <input type="text" id="correo" class="form-control" placeholder="Ingrese Nombre del Usuario...">
                         </div>
                         <div class="col-6" style="margin-top: 10px;">
                             <label for="">Tipo de Usuario</label>
-                            <select name="" id="" class="form-control">
+                            <select name="" id="tipoUsuario" class="form-control">
                                 <option value="" selected disabled> Seleccione un Nivel de Usuario</option>
                                 <option value="1">Administrador</option>
                                 <option value="2">Registrado</option>
@@ -115,18 +99,18 @@
                         </div>
                         <div class="col-6" style="margin-top: 10px;">
                             <label for="">Contraseña</label>
-                            <input type="password" class="form-control" placeholder="Ingrese contraseña...">
+                            <input type="password" id="contrasena" class="form-control" placeholder="Ingrese contraseña...">
                         </div>
                         <div class="col-6" style="margin-top: 10px;">
-                            <label for="">Fecha de Creacion</label>
-                            <input type="date" class="form-control" placeholder="Ingrese Fecha...">
+                            <label for="">Observacion</label>
+                            <input type="text" id="observacion" class="form-control" placeholder="Ingrese Observacion...">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" id="botonArchivos" class="btn" data-dismiss="modal">Close</button>
-                <button type="button" id="botonArchivos" class="btn">Save changes</button>
+                <button type="button" id="botonArchivos" class="btn" data-dismiss="modal">Cerrar</button>
+                <button type="button" id="botonArchivos" onclick="guardarUsuario()" class="btn">Guardar</button>
             </div>
             </div>
         </div>
@@ -142,6 +126,8 @@
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador-usuarios.js"></script>
+    <script src="js/all.js"></script>
 
 </body>
 </html>
