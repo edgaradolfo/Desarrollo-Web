@@ -3,6 +3,8 @@ var usuario = require('../models/usuario');
 var router = express.Router();
 var mongoose = require('mongoose');
 
+/* obtener informacion de todos los usuarios */
+
 router.get('/',function(req,res){
     usuario.find()
     .then((data)=>{
@@ -14,6 +16,8 @@ router.get('/',function(req,res){
         res.end();
     });
 });
+
+/* insertar un usuario */
 
 router.post('/',function(req,res){
     let u = new usuario({
@@ -36,6 +40,8 @@ router.post('/',function(req,res){
         res.end();
     });
 });
+
+/* eliminar un usuario en especifico */
 
 router.delete('/:id',function(req,res){
     usuario.remove({_id:req.params.id})
