@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
-<body>
+<body background="img/orange-bg.jpg" style="background-repeat: no-repeat; background-position: center center;">
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff !important;">
         <a class="navbar-brand" href="#" style="margin-left: 70px;"><img src="img/logo.png" alt=""></a>
@@ -26,13 +26,24 @@
         </div>
     </nav>
 
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb"> 
+            <li class="breadcrumb-item"><a href="index.html" style="color: orange;">Home</a></li>
+            <li class="breadcrumb-item"><a href="elegirarchivo.html" style="color: orange;">Archivos</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Videos</li>
+        </ol>
+    </nav>
+
     <div class="container-fluid">
             <div class="row">
-                <div class="col-8" style="margin-left: 70px;">
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/subirvideo-mediano.png'); margin-top: 35px; margin-left: 45px !important; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
+                <div class="col-8" style="margin-left: 70px;" id="listaVideos">
+                    <!-- <div class="card" style="margin-top: 20px;">
+                         <div class="row">
+                            <div class="col-4">
+                                <video controls src="videos/y2mate.com - nodejs_express_ep_18_uploading_files_moving_files_tySR7gXYfyI_1080p.mp4" style="width: 100%; height: 100%;">
+                                </video>
+                            </div>
+                            <div class="col-8" style="margin-top: 10px; padding-right: 10px;">
                                 <div class="detalle" style="padding-right: 10px;"> 
                                     Nombre del Video:
                                 </div>
@@ -43,72 +54,8 @@
                                     <button type="button" id="botonArchivos">Eliminar Video</button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/subirvideo-mediano.png'); margin-top: 5px; margin-top: 35px; margin-left: 45px !important; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Nombre del Video:
-                                </div>
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div style="margin-bottom: 10px;">
-                                    <button type="button" id="botonArchivos">Eliminar Video</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/subirvideo-mediano.png'); margin-top: 5px; margin-top: 35px; margin-left: 45px !important; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Nombre del Video:
-                                </div>
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                     Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div style="margin-bottom: 10px;">
-                                    <button type="button" id="botonArchivos">Eliminar Video</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/subirvideo-mediano.png'); margin-top: 5px; margin-top: 35px; margin-left: 45px !important; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Nombre del Video:
-                                </div>
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div style="margin-bottom: 10px;">
-                                    <button type="button" id="botonArchivos">Eliminar Video</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px; margin-bottom: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/subirvideo-mediano.png'); margin-top: 5px; margin-top: 35px; margin-left: 45px !important; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Nombre del Video:
-                                </div>
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                     Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div style="margin-bottom: 10px;">
-                                    <button type="button" id="botonArchivos">Eliminar Video</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        </div> 
+                    </div> -->
                 </div>
               
                 <div class="col-3" style="margin-left: 10px; margin-top: 20px;">
@@ -127,5 +74,8 @@
     <script src="js/all.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/controlador-verVideos.js"></script>
+
+
 </body>
 </html>

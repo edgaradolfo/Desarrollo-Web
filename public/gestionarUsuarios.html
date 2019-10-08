@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
-<body>
+<body background="img/orange-bg.jpg" style="background-repeat: no-repeat; background-position: center center; background-attachment: fixed;">
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff !important;">
         <a class="navbar-brand" href="#" style="margin-left: 70px;"><img src="img/logo.png" alt=""></a>
@@ -26,7 +26,38 @@
         </div>
     </nav>
 
-    <div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb"> 
+            <li class="breadcrumb-item"><a href="index.html" style="color: orange;">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Gestion Usuarios</li>
+        </ol>
+    </nav>
+
+    <div class="card container" style="margin-bottom: 11px;">
+
+        <div class="container">
+            <p class="text-center" style="font-size: 35px;">Gestion de Usuarios</p>
+        </div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+                <div class="col-4">
+    
+                </div>
+                <div class="col-4">
+                    <button type="button" class="float-right" id="botonArchivos" data-toggle="modal" data-target="#exampleModalCenter">Agregar Usuario</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <!-- <div class="container">
         <p class="text-center" style="font-size: 35px;">Gestion de Usuarios</p>
     </div>
 
@@ -42,7 +73,7 @@
                 <button type="button" class="float-right" id="botonArchivos" data-toggle="modal" data-target="#exampleModalCenter">Agregar Usuario</button>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="card container">
         <div class="row">
