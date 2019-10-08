@@ -5,6 +5,7 @@ var esquema = new mongoose.Schema({
         observacion : String,
         url : String,
         tipoArchivo : String,
+        nombreArchivo : String,
         pagina : Array
 });
 
