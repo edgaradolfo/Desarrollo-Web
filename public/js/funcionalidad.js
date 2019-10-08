@@ -9,30 +9,33 @@ function mostrarformularioVideo(){
             </div>
         </div>
         <hr>
-        <div class="col-12">
-            <input type="text" class="form-control" placeholder="Nombre Video">
-        </div>
-        <hr>
-        <div class="col-12">
-            <textarea name="" id="" cols="30" class="form-control" rows="2" placeholder="Descripcion Video"></textarea>
-        </div>
-        <hr>
-        <div class="col-12">
-            <input type="date" class="form-control" placeholder="Fecha Creacion">
-        </div>
-        <hr>
-        <div class="col-12" style="margin-bottom: 10px;">
-            <h5>Agregar Video</h5>
-            <input type="file" name="" id="" class="form-control">
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <button type="button" class="form-control" id="botonArchivos">Subir Video</button>
+        <form action="contenidos/subirVideo" method="POST" enctype="multipart/form-data">
+            <div class="col-12">
+                <input type="text" class="form-control" name="titulo" placeholder="Nombre Video">
             </div>
-            <div class="col-6">
-                <button type="button" class="form-control" onclick="esconder();" id="botonArchivos">Cancelar</button>
+            <hr>
+            <div class="col-12">
+                <input type="text" class="form-control" name="observacion" placeholder="Descripción">
             </div>
-        </div>
+            <hr>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Upload</span>
+                </div>
+                <div class="custom-file">
+                    <label class="custom-file-label" for="video">Elegir Video</label>
+                    <input type="file" name="video" id="video" class="custom-file-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class="form-control" id="botonArchivos">Subir Video</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="form-control" onclick="esconder();" id="botonArchivos">Cancelar</button>
+                </div>
+            </div>
+        </form>
     </div>
     `;
     document.getElementById('formularioArchivo').style.display = 'block';
@@ -49,30 +52,33 @@ function mostrarformularioImagenes(){
             </div>
         </div>
         <hr>
-        <div class="col-12">
-            <input type="text" class="form-control" placeholder="Nombre Imagen">
-        </div>
-        <hr>
-        <div class="col-12">
-            <textarea name="" id="" cols="30" class="form-control" rows="2" placeholder="Descripcion Imagen"></textarea>
-        </div>
-        <hr>
-        <div class="col-12">
-            <input type="date" class="form-control" placeholder="Fecha Creacion">
-        </div>
-        <hr>
-        <div class="col-12" style="margin-bottom: 10px;">
-            <h5>Agregar Imagen</h5>
-            <input type="file" name="" id="" class="form-control">
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <button type="button" class="form-control" id="botonArchivos">Subir Imagen</button>
+        <form action="contenidos/subirImagen" method="POST" enctype="multipart/form-data">
+            <div class="col-12 form-group">
+                <input type="text" class="form-control" name="titulo" placeholder="Nombre Imagen">
             </div>
-            <div class="col-6">
-                <button type="button" class="form-control" onclick="esconder();" id="botonArchivos">Cancelar</button>
+            <hr>
+            <div class="col-12 form-group">
+                <input type="text" class="form-control" name="observacion" placeholder="Descripcion">
             </div>
-        </div>
+            <hr>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Upload</span>
+                </div>
+                <div class="custom-file">
+                    <label class="custom-file-label" for="imagen">Elegir Imagen</label>
+                    <input type="file" name="imagen" id="imagen" class="custom-file-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class="form-control" id="botonArchivos">Subir Imagen</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="form-control" onclick="esconder();" id="botonArchivos">Cancelar</button>
+                </div>
+            </div>
+        </form>
     </div>
     `;
     document.getElementById('formularioArchivo').style.display = 'block';

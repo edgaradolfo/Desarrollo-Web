@@ -2,6 +2,8 @@
     llenarTabla();
 })();
 
+/* obtener informacion de los usuarios */
+
 function llenarTabla(){
     $.ajax({
         url:"/usuarios/",
@@ -31,6 +33,8 @@ function llenarTabla(){
     });
 }
 
+/* guardar un usuario */
+
 function guardarUsuario(){
     //Guardar en el servidor
     let parametros = `nombre=${document.getElementById('nombre').value}&correo=${document.getElementById('correo').value}&contrasena=${document.getElementById('contrasena').value}&observacion=${document.getElementById('observacion').value}&tipoUsuario=${$('#tipoUsuario option:selected').text()}`;
@@ -58,6 +62,8 @@ function guardarUsuario(){
         }
     });
 }
+
+/* eliminar un Usuario en especifico */
 
 function eliminarUsuario(id){
     $.ajax({
