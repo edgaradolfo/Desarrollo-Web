@@ -23,7 +23,7 @@ function llenarInformacionVideos(){
                             </div>
                             <div class="col-8" style="margin-top: 10px; padding-right: 10px;">
                                 <div class="detalle" style="padding-right: 10px;"> 
-                                    Nombre del Video: ${res[i].titulo}
+                                    Titulo del Video: ${res[i].titulo}
                                 </div>
                                 <div class="detalle" style="padding-right: 10px;"> 
                                         Detalle: ${res[i].observacion}
