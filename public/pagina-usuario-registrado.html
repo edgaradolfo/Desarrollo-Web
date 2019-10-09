@@ -19,10 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="gestionarUsuarios.html">Gestion Usuarios <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/usuarios/logout">Log Out<span class="sr-only"></span></a>
+                <a class="nav-link" href="formulario-login.html">Log Out<span class="sr-only"></span></a>
             </li>
           </ul>
         </div>
@@ -39,20 +36,7 @@
                                         Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
                                 </div>
                                 <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/elegirarchivo';">Ver Archivos</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/editarpagina.png'); margin-top: 5px; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'administrarPagina.html';">Editar Pagina Principal</button>
+                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'elegirarchivo.html';">Ver Archivos</button>
                                 </div>
                             </div>
                         </div>
@@ -83,37 +67,39 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/gestionarcomentarios.png'); margin-top: 5px; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                     Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'gestionarComentarios.html';">Gestionar Comentarios</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px; margin-bottom: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/creartemasplantillas.png'); margin-top: 5px; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'creartema.html';">Gestionar Temas/Plantillas</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
               
                 <div class="col-3" style="margin-left: 10px; margin-top: 20px;">
-                    <div class="row card" id="informacionUsuario">
-                        
+                    <div class="row card">
+                        <div class="col-12">
+                            <div class="imagen-usuario"> 
+                                <img src="img/usuarios.png" class="rounded mx-auto d-block" alt="">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            Nombre Usuario:
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            Apellido Usuario:
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            Correo Electronico:
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            Fecha Creacion:
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            Telefono:
+                        </div>
+                        <hr>
+                        <div class="col-12" style="margin-bottom: 17px;">
+                            Correo Electronico:
+                        </div>
                     </div>
                 </div>
           </div>
@@ -124,6 +110,5 @@
       <script src="js/all.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/jquery-3.4.1.min.js"></script>
-      <script src="js/controlador-pantalla-principal.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>LogIn</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -20,15 +20,23 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="formulario-login.html"><i class="fas fa-arrow-left"></i> Atras <span class="sr-only">(current)</span></a>
+            </li>
         </ul>
       </div>
     </nav>
-      <form action="/usuarios/login" method="POST" class="login-form">
-        <h1>Iniciar Sesion</h1>
+      <form action="usuarios/registrar" method="POST" class="login-form" style="width: 560px !important;">
+        <h1>Registrarse</h1>
 
         <div class="txtb">
-          <input type="text" name="correo">
-          <span data-placeholder="Correo Electrónico"></span>
+          <input type="text" name="nombre">
+          <span data-placeholder="Nombre de Usuario"></span>
+        </div>
+
+        <div class="txtb">
+            <input type="text" name="correo">
+            <span data-placeholder="Correo Electrónico"></span>
         </div>
 
         <div class="txtb">
@@ -36,11 +44,7 @@
           <span data-placeholder="Contraseña"></span>
         </div>
 
-        <input type="submit" class="logbtn" value="Login">
-
-        <div class="bottom-text">
-          Don't have account? <a href="formulario-registro.html">Sign up</a>
-        </div>
+        <input type="submit" class="logbtn" value="Registro">
 
       </form>
 
