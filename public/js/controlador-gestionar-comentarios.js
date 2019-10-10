@@ -1,18 +1,10 @@
-function vaciarCampos(){
-    document.getElementById('nombre').value = '';
-    document.getElementById('correo').value = '';
-    document.getElementById('observacion').value = '';
-    document.getElementById('contrasena').value = '';
-    document.getElementById('tipoUsuario').value = '';
-}
-
-function filtrarUsuario(){
+function filtrarComentario(){
 
     var input, filter, table, tr, td, i, txtValue;
 
-    input = document.getElementById("buscadorUsuarios");
+    input = document.getElementById("buscadorComentarios");
     filter = input.value.toUpperCase();
-    table = document.getElementById("tabla-usuarios");
+    table = document.getElementById("lista-comentarios");
     tr = table.getElementsByTagName("tr");
 
     for (i=0; i<tr.length; i++){
@@ -26,6 +18,4 @@ function filtrarUsuario(){
             }
         }
     }
-
-
 }

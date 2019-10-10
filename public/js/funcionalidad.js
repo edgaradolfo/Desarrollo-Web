@@ -24,7 +24,7 @@ function mostrarformularioVideo(){
                 </div>
                 <div class="custom-file">
                     <label class="custom-file-label" for="video">Elegir Video</label>
-                    <input type="file" name="video" id="video" class="custom-file-input">
+                    <input type="file" accept="video/*" name="video" id="video" class="custom-file-input">
                 </div>
             </div>
             <div class="row">
@@ -67,7 +67,7 @@ function mostrarformularioImagenes(){
                 </div>
                 <div class="custom-file">
                     <label class="custom-file-label" for="imagen">Elegir Imagen</label>
-                    <input type="file" name="imagen" id="imagen" class="custom-file-input">
+                    <input type="file" accept="image/*,.jpg, .png, .jpeg" name="imagen" id="imagen" class="custom-file-input">
                 </div>
             </div>
             <div class="row">
@@ -94,31 +94,34 @@ function mostrarformularioOtros(){
                 <img src="img/subirarchivosgenericos3.png" style="margin-left: 90px;" alt="">
             </div>
         </div>
-        <hr>        <div class="col-12">
-            <input type="text" class="form-control" placeholder="Nombre Archivo">
-        </div>
-        <hr>
-        <div class="col-12">
-            <textarea name="" id="" cols="30" class="form-control" rows="2" placeholder="Descripcion Archivo"></textarea>
-        </div>
-        <hr>
-        <div class="col-12">
-            <input type="date" class="form-control" placeholder="Fecha Creacion">
-        </div>
-        <hr>
-        <div class="col-12" style="margin-bottom: 10px;">
-            <h5>Agregar Archivo</h5>
-            <input type="file" name="" id="" class="form-control">
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <button type="button" class="form-control" id="botonArchivos">Subir Archivo</button>
+        <hr>        
+        <form action="contenidos/subirDocumentos" method="POST" enctype="multipart/form-data">
+            <div class="col-12 form-group">
+                <input type="text" class="form-control" name="titulo" placeholder="Nombre Archivo">
             </div>
-            <div class="col-6">
-                <button type="button" class="form-control" onclick="esconder();" id="botonArchivos">Cancelar</button>
+            <hr>
+            <div class="col-12 form-group">
+                <input type="text" class="form-control" name="observacion" placeholder="Descripcion">
             </div>
-        </div>
-        
+            <hr>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Upload</span>
+                </div>
+                <div class="custom-file">
+                    <label class="custom-file-label" for="archivo">Elegir Archivo</label>
+                    <input type="file" name="archivo" id="archivo" class="custom-file-input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class="form-control" id="botonArchivos">Subir Archivo</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="form-control" onclick="esconder();" id="botonArchivos">Cancelar</button>
+                </div>
+            </div>
+        </form>
     </div>
     `;
     document.getElementById('formularioArchivo').style.display = 'block';
