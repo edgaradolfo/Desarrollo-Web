@@ -1,129 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Latom</title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-</head>
-<body background="img/orange-bg.jpg" style="background-repeat: no-repeat; background-position: center center;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff !important;">
-        <a class="navbar-brand" href="#" style="margin-left: 70px;"><img src="img/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="gestionarUsuarios.html">Gestion Usuarios <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/usuarios/logout">Log Out<span class="sr-only"></span></a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+  </head>
+  <body>
 
-      <div class="container-fluid">
-            <div class="row">
-                <div class="col-8" style="margin-left: 70px;">
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/archivos.png'); margin-top: 5px; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                        Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/elegirarchivo';">Ver Archivos</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/editarpagina.png'); margin-top: 5px; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'administrarPagina.html';">Editar Pagina Principal</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/crearpagina.png'); margin-top: 5px; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                     Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'adminpaginaestatica.html';">Crear Pagina</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/crearentradapost.png'); margin-top: 5px; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'crearpost.html';">Crear Entrada/Post</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/gestionarcomentarios.png'); margin-top: 5px; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                     Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'gestionarComentarios.html';">Gestionar Comentarios</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px; margin-bottom: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/creartemasplantillas.png'); margin-top: 5px; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'creartema.html';">Gestionar Temas/Plantillas</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              
-                <div class="col-3" style="margin-left: 10px; margin-top: 20px;">
-                    <div class="row card" id="informacionUsuario">
-                        
-                    </div>
-                </div>
-          </div>
+    <nav class="navbar navbar-expand-lg" style="background-color: white !important;">
+      <a class="navbar-brand" href="#" style="margin-left: 70px;"><img src="img/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
+        <ul class="navbar-nav ml-auto">
+        </ul>
       </div>
+    </nav>
+      <form action="/usuarios/login" method="POST" class="login-form">
+        <h1>Iniciar Sesion</h1>
 
-      
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/all.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/jquery-3.4.1.min.js"></script>
-      <script src="js/controlador-pantalla-principal.js"></script>
-</body>
+        <div class="txtb">
+          <input type="text" name="correo">
+          <span data-placeholder="Correo Electrónico"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="password" name="contrasena">
+          <span data-placeholder="Contraseña"></span>
+        </div>
+
+        <input type="submit" class="logbtn" value="Login">
+
+        <div class="bottom-text">
+          Don't have account? <a href="formulario-registro.html">Sign up</a>
+        </div>
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.js"></script>
+<script src="js/popper.min.js"></script>
+
+  </body>
 </html>
