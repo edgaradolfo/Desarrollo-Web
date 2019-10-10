@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/usuarios/index">Home <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
@@ -28,7 +28,7 @@
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb"> 
-            <li class="breadcrumb-item"><a href="index.html" style="color: orange;">Home</a></li>
+            <li class="breadcrumb-item"><a href="/usuarios/index" style="color: orange;">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Gestion Comentarios</li>
         </ol>
     </nav>
@@ -42,7 +42,7 @@
         <div class="container" style="margin-bottom: 10px;">
             <div class="row">
                 <div class="col-4">
-                    <input type="text" class="form-control" placeholder="Search...">
+                    <input type="text" id="buscadorComentarios" onkeyup="filtrarComentario()" class="form-control" placeholder="Search...">
                 </div>
                 <div class="col-4">
 
@@ -56,7 +56,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="table-responsive-md">
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="lista-comentarios">
                         <thead>
                             <tr>
                                 <th>Usuario</th>
@@ -68,19 +68,19 @@
                         <tbody>
                             <tr>
                                 <td>Alejandro Gutierrez</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sapiente. Quam nostrum laboriosam accusamus eligendi? Dolores pariatur ut impedit et esse suscipit quisquam eum autem magni corrupti. Eos, perspiciatis dolore.</td>
+                                <td>Este es un comentario de Alejandro Gutierrez de prueba</td>
                                 <td>Post del comentario #1</td>
                                 <td>10/09/2019</td>
                             </tr>
                             <tr>
-                                <td>Alejandro Gutierrez</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptate nobis nostrum officiis velit harum, modi nisi quaerat, quam beatae! Sapiente accusamus neque eius aperiam animi dignissimos cum asperiores.</td>
+                                <td>Roberto Jimenez</td>
+                                <td>Este es un comentario de Roberto Jimenez de prueba</td>
                                 <td>Post del comentario #2</td>
                                 <td>10/09/2019</td>
                             </tr>
                             <tr>
-                                <td>Alejandro Gutierrez</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloremque totam, dolorem ducimus in neque saepe minus, quia dicta voluptates velit et sapiente porro vel expedita libero dolor, dignissimos blanditiis?</td>
+                                <td>Teofilo Lopez</td>
+                                <td>Este es un comentario de Teofilo Lopez de prueba</td>
                                 <td>Post del comentario #3</td>
                                 <td>10/09/2019</td>
                             </tr>
@@ -139,5 +139,13 @@
             </div>
         </div>
     </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/controlador-gestionar-comentarios.js"></script>
+
+
 </body>
 </html>

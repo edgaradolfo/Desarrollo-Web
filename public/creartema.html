@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="https://pagecdn.io/lib/ace/1.4.5/ace.js" integrity="sha256-5Xkhn3k/1rbXB+Q/DX/2RuAtaB4dRRyQvMs83prFjpM=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body background="img/orange-bg.jpg" style="background-repeat: no-repeat; background-position: center center; background-attachment: fixed;">
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff !important;">
         <a class="navbar-brand" href="#" style="margin-left: 70px;"><img src="img/logo.png" alt=""></a>
@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/usuarios/index">Home <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
@@ -29,23 +29,29 @@
 
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb"> 
-          <li class="breadcrumb-item"><a href="index.html" style="color: orange;">Home</a></li>
+          <li class="breadcrumb-item"><a href="/usuarios/index" style="color: orange;">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">Crear Tema</li>
       </ol>
     </nav>
-
-    <div>
-        <h2 class="text-center">Crear Tema</h2>
-    </div>
-
     <div class="container card" style="margin-bottom: 17px;">
+            <div style="margin-top: 11px;">
+                <h2 class="text-center">Crear Tema</h2>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <h5 style="margin-bottom: 10px; margin-top: 10px;">Informacion General:</h5>
                     <input type="text" class="form-control" placeholder="Titulo del Tema" style="margin-bottom: 10px; margin-top: 10px;">
                     <textarea name="" class="form-control" id="" cols="30" rows="5" style="margin-bottom: 10px; margin-top: 10px;" placeholder="Descripcion"></textarea>
                     <h5 style="margin-bottom: 10px; margin-top: 10px;">Imagenes Asociadas:</h5>
-                    <input type="file" accept="image/*,.jpg, .png, .jpeg" multiple  style="margin-bottom: 10px; margin-top: 10px;" name="" id="" placeholder="Subir Archivo">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text">Upload</span>
+                      </div>
+                      <div class="custom-file">
+                          <label class="custom-file-label" for="video">Elegir Imagenes</label>
+                          <input type="file" name="video" accept="image/*,.jpg, .png, .jpeg"  id="video" class="custom-file-input" multiple>
+                      </div>
+                  </div>
                     <h5 style="margin-bottom: 10px; margin-top: 10px;">Editor CSS:</h5>
                     <div id="editorCSS"></div>
                     <h5 style="margin-bottom: 10px; margin-top: 10px;">Editor JavaScript:</h5>
