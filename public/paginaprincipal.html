@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latom</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body background="img/orange-bg.jpg" style="background-repeat: no-repeat; background-position: center center;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff !important;">
+        <a class="navbar-brand" href="#" style="margin-left: 70px;"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="gestionarUsuarios.html">Gestion Usuarios <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/usuarios/logout">Log Out<span class="sr-only"></span></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+      <div class="container-fluid">
+            <div class="row">
+                <div class="col-8" style="margin-left: 70px;">
+                    <div class="card" style="margin-top: 20px;">
+                        <div class="row">
+                            <div class="col-2 imagen img-fluid" style="background-image: url('img/archivos.png'); margin-top: 5px; margin-bottom: 5px;"></div>
+                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
+                                <div class="detalle" style="padding-right: 10px;"> 
+                                        Detalle: En este formulario se permite el manejo de archivos. Esto quiere decir que aca se pueden ver todos los archivos que el usuario administrador desee. Estos luego se le mostraran al usuario registrado  para que pueda descargarlos y utilizar esas imagenes a la hora de hace su pagina principal. No solo imagenes, tambien se permite subir videos y/o algun otro archivo que sea necesario. Tambien se permite eliminarlos.
+                                </div>
+                                <div>
+                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/usuarios/elegirarchivo';">Ver Archivos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 20px;">
+                        <div class="row">
+                            <div class="col-2 imagen img-fluid" style="background-image: url('img/editarpagina.png'); margin-top: 5px; margin-bottom: 5px;"></div>
+                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
+                                <div class="detalle" style="padding-right: 10px;"> 
+                                    Detalle: En este formulario el usuario administrador puede modificar la página principal para los usuarios registrados de manera general. Estos deberan despues entrar acá y cambiarlo a su estilo. Acá se presentan 3 editores wysiwyg que permitirán armar la pagina de una manera mas fácil. También se presentan varias opciones, como ser el título de la página, sus editores css y js para darle estilo a la página y una breve descripción de la página.
+                                </div>
+                                <div>
+                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/usuarios/administrarPagina';">Editar Pagina Principal</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 20px;">
+                        <div class="row">
+                            <div class="col-2 imagen img-fluid" style="background-image: url('img/crearpagina.png'); margin-top: 5px; margin-bottom: 5px;"></div>
+                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
+                                <div class="detalle" style="padding-right: 10px;"> 
+                                     Detalle: En este formulario se le permite al administrador elaborar paginas estaticas que los usuarios podran usar cuando esten arman su pagina principal. En este se presenta un editor html en donde ira todo el contenido de la pagina. Tambien se proveen otras opciones como ser la url de la pagina, su pagina padre, si tendra cabezado o no, si tendra pie de pagina o no, la implementacion del breadcrumb entre otros.
+                                </div>
+                                <div>
+                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/usuarios/adminpaginaestatica';">Crear Pagina</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 20px;">
+                        <div class="row">
+                            <div class="col-2 imagen img-fluid" style="background-image: url('img/crearentradapost.png'); margin-top: 5px; margin-bottom: 5px;"></div>
+                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
+                                <div class="detalle" style="padding-right: 10px;"> 
+                                    Detalle: Es en este formulario donde se elaboraran posts de diferentes tipos. Pueden ser posts informativos, musicales, entre otros. Al usuario administrador se le da la opcion de poner manejar o gestionar lo que son todos los diferentes posts. Todo esto para poder tener un mejor control de todo lo que pasa en la pagina. A la hora de hacer un post se brinda un editor html para el contenido y otras opciones a llenar.
+                                </div>
+                                <div>
+                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/usuarios/crearpost';">Crear Entrada/Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 20px;">
+                        <div class="row">
+                            <div class="col-2 imagen img-fluid" style="background-image: url('img/gestionarcomentarios.png'); margin-top: 5px; margin-bottom: 5px;"></div>
+                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
+                                <div class="detalle" style="padding-right: 10px;"> 
+                                     Detalle: En este formulario el usuario administrador tiene un control sobre lo que son los comentarios que han hecho todos los usuarios en diferentes posts, todo esto para poder tener un mejor control de la información. En dicha tabla se filtran los comentarios por usuario, lo que dice el comentario y en que post fue que se insertó el comentario. El acceso esta restringido a solo los administradores, los usuarios registrados no.
+                                </div>
+                                <div>
+                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/usuarios/gestionarComentarios';">Gestionar Comentarios</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 20px; margin-bottom: 20px;">
+                        <div class="row">
+                            <div class="col-2 imagen img-fluid" style="background-image: url('img/creartemasplantillas.png'); margin-top: 5px; margin-bottom: 5px;"></div>
+                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
+                                <div class="detalle" style="padding-right: 10px;"> 
+                                    Detalle: En el formulario de Creación de Temas es donde los usuarios podrán elegir los diversos temas que se les presentan. Estos temas son alimentados por este formulario al cual tiene acceso el usuario administrador y es el que llenara con imagenes y estilos cada tema a la hora de crearlos. Por cada tema hay opciones a llenar como ser el nombre o título del tema y una breve descripción sobre que trata el tema que fue creado.
+                                </div>
+                                <div>
+                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/usuarios/creartema';">Gestionar Temas/Plantillas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-3" style="margin-left: 10px; margin-top: 20px;">
+                    <div class="row card" id="informacionUsuario">
+                        
+                    </div>
+                </div>
+          </div>
+      </div>
+
+      
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/all.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/controlador-pantalla-principal.js"></script>
+</body>
+</html>

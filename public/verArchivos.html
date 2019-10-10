@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="elegirarchivo.html"><i class="fas fa-arrow-left"></i> Atras <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/usuarios/elegirarchivo"><i class="fas fa-arrow-left"></i> Atras <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
@@ -28,17 +28,17 @@
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb"> 
-            <li class="breadcrumb-item"><a href="index.html" style="color: orange;">Home</a></li>
-            <li class="breadcrumb-item"><a href="elegirarchivo.html" style="color: orange;">Archivos</a></li>
+            <li class="breadcrumb-item"><a href="/usuarios/index" style="color: orange;">Home</a></li>
+            <li class="breadcrumb-item"><a href="/usuarios/elegirarchivo" style="color: orange;">Archivos</a></li>
             <li class="breadcrumb-item active" aria-current="page">Genericos</li>
         </ol>
     </nav>
 
-
     <div class="container-fluid">
             <div class="row">
-                <div class="col-8" style="margin-left: 70px;">
-                    <div class="card" style="margin-top: 20px;">
+                <div class="col-8" style="margin-left: 70px;" id="listaArchivos">
+
+                    <!-- <div class="card" style="margin-top: 20px;">
                         <div class="row">
                             <div class="col-2 imagen img-fluid" style="background-image: url('img/subirarchivosgenericos-mediano.png'); margin-top: 35px; margin-left: 45px !important; margin-bottom: 5px;"></div>
                             <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
@@ -53,71 +53,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/subirarchivosgenericos-mediano.png'); margin-top: 35px; margin-left: 45px !important; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Nombre de Archivo:
-                                </div>
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div style="margin-bottom: 10px;">
-                                    <button type="button" id="botonArchivos">Eliminar Archivo</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/subirarchivosgenericos-mediano.png'); margin-top: 35px; margin-left: 45px !important; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Nombre de Archivo:
-                                </div>
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                     Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div style="margin-bottom: 10px;">
-                                    <button type="button" id="botonArchivos">Eliminar Archivo</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/subirarchivosgenericos-mediano.png'); margin-top: 35px; margin-left: 45px !important; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Nombre de Archivo:
-                                </div>
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div style="margin-bottom: 10px;">
-                                    <button type="button" id="botonArchivos">Eliminar Archivo</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="margin-top: 20px; margin-bottom: 20px;">
-                        <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/subirarchivosgenericos-mediano.png'); margin-top: 35px; margin-left: 45px !important; margin-bottom: 5px;"></div>
-                            <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                    Nombre de Archivo:
-                                </div>
-                                <div class="detalle" style="padding-right: 10px;"> 
-                                     Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
-                                </div>
-                                <div style="margin-bottom: 10px;">
-                                    <button type="button" id="botonArchivos">Eliminar Archivo</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
+                    
                 </div>
               
                 <div class="col-3" style="margin-left: 10px; margin-top: 20px;">
@@ -136,5 +73,6 @@
     <script src="js/all.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/controlador-verArchivos.js"></script>
 </body>
 </html>

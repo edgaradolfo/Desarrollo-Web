@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 70px;">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="formulario-login.html">Log Out<span class="sr-only"></span></a>
+                <a class="nav-link" href="/usuarios/logout">Log Out<span class="sr-only"></span></a>
             </li>
           </ul>
         </div>
@@ -33,23 +33,23 @@
                             <div class="col-2 imagen img-fluid" style="background-image: url('img/archivos.png'); margin-top: 5px; margin-bottom: 5px;"></div>
                             <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
                                 <div class="detalle" style="padding-right: 10px;"> 
-                                        Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
+                                        Detalle: En este formulario se permite el manejo de archivos. Esto quiere decir que aca se pueden ver todos los archivos que el usuario administrador desee. Estos luego se le mostraran al usuario registrado para que pueda descargarlos y utilizar esas imagenes a la hora de hace su pagina principal. No solo imagenes, tambien se permite subir videos y/o algun otro archivo que sea necesario. El usuario solo tiene acceso a descargarlos para poderlos usar despues.
                                 </div>
                                 <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'elegirarchivo.html';">Ver Archivos</button>
+                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/usuarios/elegirarchivo';">Ver Archivos</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card" style="margin-top: 20px;">
                         <div class="row">
-                            <div class="col-2 imagen img-fluid" style="background-image: url('img/crearpagina.png'); margin-top: 5px; margin-bottom: 5px;"></div>
+                            <div class="col-2 imagen img-fluid" style="background-image: url('img/editarpagina.png'); margin-top: 5px; margin-bottom: 5px;"></div>
                             <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
                                 <div class="detalle" style="padding-right: 10px;"> 
-                                     Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
+                                    Detalle: En este formulario el usuario puede modificar la página principal que fue hecha por el Administrador como página por defecto. Estos deberan despues entrar acá y cambiarlo a su estilo. Acá se presentan 3 editores wysiwyg que permitirán armar la pagina de una manera mas fácil. También se presentan varias opciones, como ser el título de la página, sus editores css y js para darle estilo a la página y una breve descripción de la página. 
                                 </div>
                                 <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'adminpaginaestatica.html';">Crear Pagina</button>
+                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/usuarios/administrarPagina';">Editar Pagina Principal</button>
                                 </div>
                             </div>
                         </div>
@@ -59,10 +59,10 @@
                             <div class="col-2 imagen img-fluid" style="background-image: url('img/crearentradapost.png'); margin-top: 5px; margin-bottom: 5px;"></div>
                             <div class="col-9" style="margin-top: 10px; padding-right: 10px;">
                                 <div class="detalle" style="padding-right: 10px;"> 
-                                    Detalle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id gravida metus. Vestibulum vehicula ultricies tortor, quis egestas massa viverra eget. Etiam a tortor eget metus ultrices consequat iaculis vitae ante. Nunc elit est, sollicitudin nec felis eget, tempus fringilla ante. Pellentesque nec eros quis magna dapibus interdum sit amet nec diam. Aliquam semper mi quis orci fermentum egestas ut in nunc. Etiam ac congue metus.
+                                    Detalle: Es en este formulario donde se elaboraran posts de diferentes tipos. Pueden ser posts informativos, musicales, entre otros. Al usuario se le da la opcion de poner insertar un post y poder comentar los otros posts. A la hora de hacer un post se brinda un editor html para el contenido y otras opciones a llenar. Una vez creado el post, será enviado a la página donde estan todos los posts de los otros usuarios.
                                 </div>
                                 <div>
-                                    <button type="button" id="botonArchivos" onclick="window.location.href = 'crearpost.html';">Crear Entrada/Post</button>
+                                    <button type="button" id="botonArchivos" onclick="window.location.href = '/usuarios/crearpost';">Crear Entrada/Post</button>
                                 </div>
                             </div>
                         </div>
@@ -70,36 +70,7 @@
                 </div>
               
                 <div class="col-3" style="margin-left: 10px; margin-top: 20px;">
-                    <div class="row card">
-                        <div class="col-12">
-                            <div class="imagen-usuario"> 
-                                <img src="img/usuarios.png" class="rounded mx-auto d-block" alt="">
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="col-12">
-                            Nombre Usuario:
-                        </div>
-                        <hr>
-                        <div class="col-12">
-                            Apellido Usuario:
-                        </div>
-                        <hr>
-                        <div class="col-12">
-                            Correo Electronico:
-                        </div>
-                        <hr>
-                        <div class="col-12">
-                            Fecha Creacion:
-                        </div>
-                        <hr>
-                        <div class="col-12">
-                            Telefono:
-                        </div>
-                        <hr>
-                        <div class="col-12" style="margin-bottom: 17px;">
-                            Correo Electronico:
-                        </div>
+                    <div class="row card" id="informacionUsuarioRegistrado">
                     </div>
                 </div>
           </div>
@@ -110,5 +81,6 @@
       <script src="js/all.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/controlador-pantalla-registrado.js"></script>
 </body>
 </html>
