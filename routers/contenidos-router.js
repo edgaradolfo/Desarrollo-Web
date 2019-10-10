@@ -32,6 +32,20 @@ router.get('/videos',function(req,res){
     });
 });
 
+/* obtener todos los videos, con el filtro de tipo de archivo */
+
+router.get('/documentos',function(req,res){
+    contenido.find({tipoArchivo: "Documento"})
+    .then((data)=>{
+        res.send(data);
+        res.end();
+    })
+    .catch((error)=>{
+        res.send(error);
+        res.end();
+    });
+});
+
 /* subir Imagen */
 
 router.post('/subirImagen', function(req,res){
@@ -107,6 +121,48 @@ router.post('/subirVideo', function(req,res){
             .then(function(obj){
                 /* res.send(obj); */
                 res.redirect('/elegirarchivo.html');
+                res.end();
+            })
+            .catch(function(error){
+                /* res.send(error); */
+                res.end();
+            });
+        
+        }
+
+    });
+
+});
+
+router.post('/subirDocumentos', function(req,res){
+
+    var documentoFile = req.files.archivo;
+
+    var rutaDocumento = `public/documentos/${documentoFile.name}`;
+    var archivoDocumento = "Documento";
+    var identificadorDocumento = documentoFile.name;
+
+    documentoFile.mv("public/documentos/" + documentoFile.name, function(error){
+
+        if(error){
+            console.log("No se pudo subir el documento");
+            console.log(error);      
+        }else{
+            console.log("El documento se subio de manera satisfactoria");
+
+            let c = new contenido({
+                titulo:req.body.titulo,
+                observacion:req.body.observacion,
+                url: rutaDocumento,
+                tipoArchivo: archivoDocumento,
+                nombreArchivo: identificadorDocumento,
+                pagina:[]
+            }); 
+            //Promesa
+            c.save()
+            .then(function(obj){
+                /* res.send(obj); */
+                res.redirect('/usuarios/elegirarchivo');
                 res.end();
             })
             .catch(function(error){
