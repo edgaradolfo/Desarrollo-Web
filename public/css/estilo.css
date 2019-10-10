@@ -38,6 +38,30 @@ body{
     outline: none;
     }
 
+#botonArchivosDescargar{
+    background-color: rgba(243, 53, 28, 0.856);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    margin-top: 10px;
+    transition: all 0.4s ease 0s;
+    text-transform: uppercase;
+    padding: 5px 5px 5px 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#botonArchivosDescargar:hover {
+    background: #b90303d3;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(187, 9, 9, 0.705);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(187, 9, 9, 0.705);
+    box-shadow: 5px 40px -10px rgba(187, 9, 9, 0.705);
+    transition: all 0.4s ease 0s;
+    outline: none;
+    }
+
+
 
 .imagen-usuario{
     box-sizing: border-box;
